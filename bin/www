@@ -1,9 +1,4 @@
-
-
-
 const http = require("http");
-
-
 
 const port = normalizePort(process.env.PORT || '3000');
 
@@ -17,7 +12,7 @@ server.listen(port, () => {
 
 const WebSocket = require('ws');
 
-const wss = new WebSocket.Server({ port: 3000 });
+const wss = new WebSocket.Server({ port: port });
 
 function normalizePort(val) {
   var port = parseInt(val, 10);
