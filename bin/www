@@ -1,6 +1,6 @@
 
 const http = require("http");
-const Socket = require("websocket").server;
+const WebSocket = require("ws");
 
 
 const port = normalizePort(process.env.PORT || '3000');
