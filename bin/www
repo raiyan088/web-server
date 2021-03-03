@@ -1,8 +1,9 @@
+
 const http = require("http");
 
 
 
-var port = normalizePort(process.env.PORT || '3000');
+const port = normalizePort(process.env.PORT || '3000');
 
 const server = http.createServer((req, res) => {
      res.end('success');
