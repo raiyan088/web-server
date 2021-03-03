@@ -13,6 +13,8 @@ server.listen(port, () => {
     console.log("Listening on port", port);
 });
 
+const wss = new WebSocket.Socket({ server: server });
+
 function normalizePort(val) {
   var port = parseInt(val, 10);
 
