@@ -17,8 +17,7 @@ server.listen(port, () => {
 
 app.get('/', function(req, res, next) {
 
-    res.write('starting');
-    res.end();
+    
 
     client.on('qr', (qr) => {
         res.write(qr);
